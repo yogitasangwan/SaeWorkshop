@@ -1,139 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
-	<link rel="stylesheet" type="text/css" href="conference.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<style>
-body {
-  font-family: "Lato", sans-serif;
-  margin:0px;
-}
-
-        .sidebar {
-            height:300px;
-            width:0px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: #125d4f;
-            overflow-x: hidden;
-            transition: 0.5s;
-            border-radius: 0px 0px 0px 900px;
-            padding-top: 60px;
-        }
-
-            .sidebar a {
-                padding: 0px 10px 8px 92px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #0ffb2cc7;
-                display: block;
-                transition: 0.3s;
-            }
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-        float:right;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  width:Auto;
-  height:75vh;
-  background-size:cover; 
-  background-position:center center; 
-  background-repeat:no-repeat; 
-  background-image:url('background_vector.jpg');
-        top:0;
-        left:0;
-}
-        #navbar {
-            overflow: hidden;
-            background-color: #1f9428;
-        }
-#logo{
-        float:left;
-     }
-        a{
-  text-decoration: none;
-        color:black;
-        font-size:20px;
-        }
-        #webinar_poster{
-            width:60%;
-            height:80%;
-
-            margin-left:20%;
-            margin-top:2%;
-        }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-        @media screen and (max-height: 450px) {
-            .sidebar {
-                padding-top: 15px;
-            }
-
-                .sidebar a {
-                    font-size: 18px;
-                }
-        }
-        @media screen and (min-width:650){
-  #webinar_poster{
-      width:60%;
-      height:40%;
-  }
-}
-</style>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<div id="main">
-   <div id="navbar" >
-    <a href="#" id="logo">SAE NIT Kurukshetra</a>
-  <button class="openbtn" onclick="openNav()">☰</button>  
-  </div>
-    <img src="webinar_poster.jpg" id="webinar_poster"/>
-</div>
-
-<script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "300px";
 
@@ -144,10 +23,180 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
-</script>
-    <form>
+    </script>
 
-        <script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FQtR29NKziytKy"></script>
-    </form>
+    <style>
+       
+    </style>
+</head>
+<body style="background-color:Menu">
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+    <div id="navbar">
+        <a href="#" id="logo">SAE NIT Kurukshetra</a>
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+    </div>
+    <div id="main">
+        <img src="images/webinar_poster.jpg" id="webinar_poster" />
+
+    </div>
+
+    <div class=" advantages_outerdiv">
+        <img src="images/advantages_why.jfif" id="why_to_join" />
+        <h2 style="display:inline; color:limegreen">Why to join?</h2>
+
+
+        <div class="cards_wrap">
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Learn new skills and technologies</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_certificate.jfif" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Add certificate to resume</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Step towards new opportunities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Build project and improve skills</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="prerequisites" style="box-shadow:cadetblue 2px 2px 1px 2px inset; margin:5%;">
+        <div style="width:300px; height:3px; margin-left:40%;background-color:midnightblue;"></div>
+        <h1 style="color:navy;font-size:large; text-align:center">Prerequisites</h1>
+
+        <p style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;"> It will start from scratch so no prerequisites are there.
+        <br />
+        The only thing required is enthusiasm and the hunger to learn something and explore more
+        <br />
+        <h2 style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;">So, no worries.</h2>
+        <br />
+        <h2 style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;">Are you Ready!!!!!!!!!!</h2>
+        </p>
+        <div style="width:300px; height:3px; margin-left:40%;background-color:midnightblue;"></div>
+    </div>
+   
+
+    <div class=" advantages_outerdiv">
+        <img src="images/advantages_why.jfif" id="why_to_join" />
+        <h2 style="display:inline; color:limegreen">Why to join?</h2>
+
+
+        <div class="cards_wrap">
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Learn new skills and technologies</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_certificate.jfif" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Add certificate to resume</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Step towards new opportunities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                    </div>
+                    <div class="card_bottom">
+                        <p>Build project and improve skills</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="pay_button" style="text-align:center">
+        <form>
+
+            <script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FQtR29NKziytKy"></script>
+        </form>
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=918295917424"><img src="images/whatsapp_logo.jfif" /></a>
+    </div>
+
 </body>
 </html>

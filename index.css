@@ -1,0 +1,259 @@
+﻿body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    background-color:black;
+}
+
+
+.sidebar {
+    height: 300px;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #125d4f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 0px 0px 0px 900px;
+    padding-top: 60px;
+}
+
+    .sidebar a {
+        padding: 0px 10px 8px 92px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f4f7f4c7;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+}
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+#main {
+    transition: margin-left .5s;
+    width: 100%;
+    height: auto;
+    background-size: auto;
+    background-position: center center;
+    opacity: 1;
+    background-image: url('images/background_gear11.jpg');
+    // background-color:rgb(255, 192, 192);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin-top:-2px;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #3e1e5d;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: inline-block;
+}
+
+#logo {
+    float: left;
+    text-decoration: none;
+    color: #d9edf7;
+    font-size: 20px;
+}
+
+#webinar_poster {
+    width: 55%;
+    opacity: 1;
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 5%;
+    // margin-top: 5%;
+}
+
+#why_to_join {
+    width: 20%;
+    height: 20%;
+    margin-left: 20%;
+    margin-top: 2%;
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+.advantages {
+    background-color:greenyellow;
+    width: auto;
+    height: auto;
+    box-shadow: whitesmoke 1px 1px 10px 1px;
+    position: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display:flex;
+}
+
+.advantages_outerdiv {
+    width: 80%;
+    height: auto;
+    border-bottom: 5px groove;
+    position: center;
+    box-shadow: #d9edf7 1px 2px 20px 6px inset;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cards_wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    height: 300px;
+}
+
+    .cards_wrap .card_item {
+        width: 25%;
+        padding: 10px;
+        height:300px;
+       
+    }
+
+    .cards_wrap .card_inner {
+        background: #fff;
+    }
+
+    .cards_wrap .card_top {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .cards_wrap .card_bottom {
+        padding: 15px;
+    }
+
+        .cards_wrap .card_bottom .card_category {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .cards_wrap .card_bottom .card_info {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px dashed #0071bc;
+        }
+
+            .cards_wrap .card_bottom .card_info .title {
+                color: #0071bc;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+        .cards_wrap .card_bottom .card_creator {
+            text-align: center;
+        }
+
+.whatsapp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: green;
+    position: sticky;
+    z-index: 1;
+    bottom: 0px;
+}
+        .whatsapp img{
+            width:50px;
+            height:50px;
+        }
+
+
+        /*media queries */
+@media (max-width: 1024px) {
+    .cards_wrap .card_item {
+        width: 33.3%;
+    }
+    #webinar_poster{
+        width:50%;
+        height:50%;
+    }
+    }
+
+@media (max-width: 768px) {
+    .cards_wrap .card_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 528px) {
+    .cards_wrap .card_top {
+        height: auto;
+    }
+
+    .cards_wrap .card_item {
+        width: 100%;
+    }
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+}
+
+@media screen and (max-width:800px) {
+    #webinar_poster {
+        width: 70%;
+        height: 60%;
+       padding:20px;
+    }
+
+    #main {
+        height: 30vh;
+    }
+}
