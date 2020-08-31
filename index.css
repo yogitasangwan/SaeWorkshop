@@ -76,7 +76,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 
 #logo {
