@@ -6,7 +6,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,11 +25,12 @@ function closeNav() {
 }
     </script>
 
+    
     <style>
-       
     </style>
 </head>
-<body style="background-color:Menu">
+<body style="        background-color: #030f1b
+">
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -40,158 +41,269 @@ function closeNav() {
     </div>
 
 
-    <div id="navbar">
-        <a href="#" id="logo">SAE NIT Kurukshetra</a>
-        <button class="openbtn" onclick="openNav()">☰</button>
+    <!--<div id="navbar">
+         <a href="#" id="logo">SAE NIT Kurukshetra</a>
+         <button class="openbtn" onclick="openNav()">☰</button>
 
-    </div>
+     </div>
+        -->
     <div id="main">
-        <img src="webinar_poster.jpg" id="webinar_poster" />
+        <div class="pay_button">
+            <form>
+
+                <script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FQtR29NKziytKy"></script>
+            </form>
+        </div>
+        <!-- <img src="images/Background_header.jpg" id="webinar_poster" />-->
 
     </div>
 
-    <div class=" advantages_outerdiv">
-        <img src="images/advantages_why.jfif" id="why_to_join" />
-        <h2 style="display:inline; color:limegreen">Why to join?</h2>
+    <div id="clockdiv">
 
+        <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+        </div>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+    <script src="timer.js">
+    </script>
 
-        <div class="cards_wrap">
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Learn new skills and technologies</p>
-                    </div>
-                </div>
+    <div class="prerequisites">
+
+        <div class="prereq_wrap">
+
+            <div id="prereq_left">
+                <img src="images/prerequisites_clipart.jpg" class="image_clipart" />
             </div>
+            <div id="prereq_right">
+                <h1 class="heading1">Prerequisites</h1>
 
-
-
-
-
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_certificate.jfif" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Add certificate to resume</p>
-                    </div>
-                </div>
+                <p>
+                    Relax!, not much is needed from your side.<br />
+                    However, for a better understanding and ease of calculation,the basics of Machine Design and some vocabulary of Transmission would benefit you.
+                    <br />
+                    <h2>
+                        So, Are you Ready!!!!!!!!!!
+                    </h2>
+                </p>
             </div>
-
-
-
-
-
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Step towards new opportunities</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Build project and improve skills</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </div>
-    <div class="prerequisites" style="box-shadow:cadetblue 2px 2px 1px 2px inset; margin:5%;">
-        <div style="width:60%; height:1%; margin-left:40%;background-color:midnightblue;"></div>
-        <h1 style="color:navy;font-size:large; text-align:center">Prerequisites</h1>
+    <div class="Horizontal_Row1"></div>
+    <div class="Horizontal_Row2"></div>
+    <!--<div class=" advantages_outerdiv">
+            <div class="prereq_wrap">
 
-        <p style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;"> It will start from scratch so no prerequisites are there.
-        <br />
-        The only thing required is enthusiasm and the hunger to learn something and explore more
-        <br />
-        <h2 style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;">So, no worries.</h2>
-        <br />
-        <h2 style="font-size:medium;font-family:'Times New Roman', Times, serif; color:cadetblue;text-align:center;">Are you Ready!!!!!!!!!!</h2>
-        </p>
-        <div style="width:60%; height:2px; margin-left:40%;background-color:midnightblue;"></div>
+                <div id="prereq_left">
+                    <img src="images/advantages_why.jfif" class="why_to_join" />
+                    <h1 class="heading1">Earnings</h1>
+                </div>
+                <div id="prereq_right">
+                    <div class="cards_wrap">
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                        </div>
+                        <div class="card_bottom">
+                            <p><b>Learn new skills and technologies</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/advantages_skills.jpg" alt="learn new skills" />
+                        </div>
+                        <div class="card_bottom">
+                            <p><b>Build project and improve your skills </b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/advantages_certificate.jfif" alt="Earn a certificate" />
+                        </div>
+                        <div class="card_bottom">
+                            <p><b>Add certificate to resume</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/advantages_success.jfif" alt="step towards success" />
+                        </div>
+                        <div class="card_bottom">
+                            <p><b>Step towards success</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    -->
+    <div class="prerequisites">
+        <div class="prereq_wrap">
+
+            <div id="prereq_left">
+                <img src="images/learning.png" class="why_to_join" />
+                <h1 class="heading1">Learnings</h1>
+            </div>
+            <div id="prereq_right">
+                <ul>
+                    <li>
+                        <i class="fa fa-check"></i> Basics of Transimssion
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>Greater details about CVT design parameters, optimisation, calculations, tuning and CVT cooling.<br />
+                        <br />
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>GearBox design, calculations ,heat dissipation and lubrication.
+                        <br />
+                    </li>
+
+                </ul>
+            </div>
+                
+        </div>
+        <center><hr size="1" width="50%" color="#fff"></center>
+
+        <div class="prereq_wrap">
+
+            <div id="prereq_left">
+                <img src="images/recommended.jpg" class="why_to_join" />
+                <h1 class="heading1">Recommended for</h1>
+            </div>
+            <div id="prereq_right">
+                <ul>
+                    <li>
+                        <i class="fa fa-check"></i> Automobile Enthusiasts irrespective of branch
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>Mechanical, Automotive ,Mechatronics & Production Engineering students.<br />
+                        <br />
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i> Hightly recomended for new BAJA and FORMULA teams
+                        
+                        <br />
+                    </li>
+                </ul>
+            </div>
+
+           <p style="color: #2ef562; font-size: medium;" >
+               <br />
+               <i class="fa fa-star"></i>
+               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; This workshop will set a strong foundation, enabling you to look forward to the recent R&D and the the latest technologies arriving in the field of Transmission
+               <br /><br />
+               <br />
+               <i class="fa fa-star"></i>
+              
+
+               &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; A major part of the workshop is designed to help students build their own car/buggy from scratch
+           </p>
+        </div>
+
     </div>
    
-
-    <div class=" advantages_outerdiv">
-        <img src="images/advantages_why.jfif" id="why_to_join" />
-        <h2 style="display:inline; color:limegreen">Why to join?</h2>
-
-
-        <div class="cards_wrap">
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Learn new skills and technologies</p>
-                    </div>
-                </div>
-            </div>
+   
 
 
 
-
-
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_certificate.jfif" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Add certificate to resume</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Step towards new opportunities</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/advantages_skills.jpg" alt="learn new skills" />
-                    </div>
-                    <div class="card_bottom">
-                        <p>Build project and improve skills</p>
-                    </div>
-                </div>
-            </div>
-
+    <div class="footer">
+        <div class="top">
+            <center><hr size="1" width="95%" color="#fff"></center>
         </div>
 
-    </div>
+        <div class="body">
+            <div class="block first">
+                <ul>
+                    <li><h2 style="font-size: 26px;">The Trinity</h2></li>
+                    <li style="color: #000;"> t</li>
+                    <li><a href="#">Autokriti</a></li>
+                    <li><a href="#">Team Accelerons</a></li>
+                    <li><a href="#">Team Nitrox</a></li>
+                </ul>
+            </div>
+            <div class="block second">
+                <ul>
+                    <li><h2 style="font-size: 26px;">Explore</h2></li>
+                    <li style="color: #000;">t</li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Discuss</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Hall of Fame</a></li>
+                    <!--<li>Seminars</li>
+                    <li>Alumni Talks</li>-->
+                </ul>
+            </div>
+            <div class="block third">
+                <dl>
+                    <dt>
+                        <h2 style="font-size: 26px;">Our Leaders</h2>
+                    </dt>
+                    <dd style="color: #000;">t</dd>
+                    <dt class="change">President</dt>
+                    <dd>&nbsp;&nbsp;Keshav Vats&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
 
-    <div class="pay_button" style="text-align:center">
-        <form>
+                    <dt class="change">Vice President</dt>
+                    <dd>&nbsp;&nbsp;Ritik Goyal&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
 
-            <script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FQtR29NKziytKy"></script>
-        </form>
+                    <dt class="change">Marketing Chairperson</dt>
+                    <dd>&nbsp;&nbsp;Pavitra Jain&nbsp;&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i></dd>
+                </dl>
+            </div>
+            <div class="block forth">
+                <ul>
+                    <li><h2 style="font-size: 26px;">Contact Us</h2></li>
+                    <li style="color: #000;">t</li>
+                    <li style="color: #000;">t</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +91 9650735458</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> smthng@gmail.com</li>
+                    <li style="color: #000;">t</li>
+                    <li style="color: #000;">t</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +91 9250684258</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> nothing@gmail.com</li>
+                    <li style="color: #000;">t</li>
+                    <li style="color: #000;">t</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +91 8750739808</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> whatever@gmail.com</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bottom">
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2020 SAE National Institute of Technology, Kurukshetra
+           <div class="creators">
+    Designers and Developers :&nbsp;&nbsp;&nbsp;Yogita Sangwan &nbsp;&nbsp;&nbsp;Amit Rawat  &nbsp;&nbsp;&nbsp;Arnav Goel
+</div>
+        </div>
     </div>
 
     <div class="whatsapp">

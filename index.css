@@ -1,9 +1,8 @@
 ﻿body {
     font-family: "Lato", sans-serif;
     margin: 0px;
-    background-color:black;
+    background-color:#3e1e5d;
 }
-
 
 .sidebar {
     height: 300px;
@@ -57,20 +56,18 @@
 #main {
     transition: margin-left .5s;
     width: 100%;
-    height: auto;
-    background-size: auto;
-    background-position: center center;
-    opacity: 1;
-    background-image: url('images/background_gear11.jpg');
-    // background-color:rgb(255, 192, 192);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    margin-top:-2px;
+    height:60vh;
+    margin-top: -2%;
+    
+    background-image:url('images/background_header.jpg');
+    background-attachment:fixed;
+    background-size:contain;
+   background-repeat:no-repeat;
     top: 0;
     left: 0;
 }
 
-#navbar {
+/*#navbar {
     overflow: hidden;
     background-color: #3e1e5d;
     position: fixed;
@@ -78,7 +75,7 @@
     width: 100%;
     display: block;
 }
-
+*/
 #logo {
     float: left;
     text-decoration: none;
@@ -87,22 +84,163 @@
 }
 
 #webinar_poster {
-    width: 55%;
-    opacity: 1;
-    height: 80%;
-    margin-left: 20%;
-    margin-top: 5%;
-    // margin-top: 5%;
+    display:inline;
+    width: 100%;
+    opacity: 1;   
+     margin-top:1%;
 }
 
-#why_to_join {
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-left:35%;
+    margin-bottom:2%;
+}
+
+    #clockdiv > div {
+        padding: 10px;
+        border-radius: 3px;
+        background: #030f1b;
+        display: inline-block;
+    }
+
+    #clockdiv div > span {
+        padding: 15px;
+        border-radius: 3px;
+        background: #04335f;
+       
+        display: inline-block;
+    }
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+.prerequisites {
+    background-color: #021c35;
+  //  box-shadow: #04045d 2px 2px 20px 0px;
+    margin-left: 10%;
+    //margin-top: 5%;
+    width: 80%;
+    align-content: center;
+    background-attachment: fixed;
+}
+/*
+.prerequisites {
+    box-shadow: midnightblue 2px 2px 1px 12px inset;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    align-content: center;
+    background-attachment:fixed;
+    
+    
+}
+   */
+
+.Horizontal_Row1 {
+    width: 40%;
+    height: 3px;
+    display:inline-block;
+   // margin-left: 40%;
+    margin-bottom:0%;
+    background-color: white;
+}
+.Horizontal_Row2 {
+    width: 40%;
+    height: 3px;
+    margin-left: 60%;
+    background-color: white;
+}
+
+#prereq_left {
+    display: inline;
+    float: left;
+    //border:5px solid red;
+    width: 40%;
+    margin-top: 5%;
+    
+}
+.why_to_join {
     width: 20%;
-    height: 20%;
-    margin-left: 20%;
-    margin-top: 2%;
+    height: auto;
+    border-radius: 50%;
+    border-collapse: collapse;
+    margin: 5% 1% 5% 30%;
     display: inline-block;
     background-color: aquamarine;
 }
+.heading1 {
+    color:white;  
+    text-align: center;
+    display:inline-block;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+#prereq_left .heading1{
+    display:block;
+    margin-top:-1%;
+}
+
+#prereq_right p {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: #00BCD4;
+    text-align: center;
+}
+
+#prereq_right h2 {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#prereq_right{
+    display:inline;
+    float:right;
+   // border:5px solid red;
+    width:60%;
+     text-align:center;
+     padding-top:5%;
+
+}
+#prereq_right ul{
+    color:white;
+    font-size:medium;
+    text-align:left;
+}
+.fa-check {
+    display: block;
+}
+
+    .fa-check::before {
+        color: green;
+    }
+
+.prereq_wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 1%;
+    align-content: center;
+}
+
+.image_clipart{
+    width:90%;
+    height:90%;
+    display:block;
+}
+
+
 
 .advantages {
     background-color:greenyellow;
@@ -120,9 +258,9 @@
 .advantages_outerdiv {
     width: 80%;
     height: auto;
-    border-bottom: 5px groove;
-    position: center;
-    box-shadow: #d9edf7 1px 2px 20px 6px inset;
+    border-right:5px groove;
+    border-left:5px groove;
+    box-shadow:#034b6f 1px 5px 15px 3px ;
     border-radius: 10px;
     margin-left: 10%;
     margin-top: 5%;
@@ -142,81 +280,76 @@ img {
 
 
 .cards_wrap {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
-  
+    height: 80%;
+    margin-left: 5%;
+    align-items: stretch; /*stretches all cards same height*/
+    justify-content: space-around;
 }
 
     .cards_wrap .card_item {
-        width: 25%;
-        padding: 10px;
-        
-       
+        width:25%;
+       // border:2px solid cadetblue;
+        padding:2px;
     }
 
     .cards_wrap .card_inner {
-        background: #fff;
+        background:#fff;
+       
     }
 
     .cards_wrap .card_top {
         width: 100%;
         height: 100%;
-        padding: 10px;
-        padding-bottom: 0;
-    }
+      padding:2px;
+      
+       }
 
     .cards_wrap .card_bottom {
         padding: 15px;
+        color:darkblue;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
     }
+.Learnings{
+    width:15%;
+    height:15%;
+    border-radius:25%;
+    margin:5%;
+    display:inline-block;
 
-        .cards_wrap .card_bottom .card_category {
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .cards_wrap .card_bottom .card_info {
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px dashed #0071bc;
-        }
-
-            .cards_wrap .card_bottom .card_info .title {
-                color: #0071bc;
-                font-size: 18px;
-                margin-bottom: 5px;
-            }
-
-        .cards_wrap .card_bottom .card_creator {
-            text-align: center;
-        }
+}     
 
 .whatsapp {
+
     width: 50px;
     height: 50px;
-    border-radius: 50px;
-    background-color: green;
-    position: sticky;
-    z-index: 1;
-    bottom: 0px;
+   
+  
+    position:fixed;
+    top:90%;
 }
-        .whatsapp img{
+.whatsapp img{
             width:50px;
             height:50px;
-        }
+            border-radius:50px;
+}
 
-
-        /*media queries */
-@media (max-width: 1024px) {
+.pay_button {
+    
+    position: fixed;
+  bottom:0px;
+   z-index:1;
+    /* float: right; */
+    right: 5px;
+}
+/*@media (max-width: 1024px) {
     .cards_wrap .card_item {
         width: 33.3%;
     }
-    #webinar_poster{
-        width:50%;
-        height:50%;
-    }
-    }
+}
 
 @media (max-width: 768px) {
     .cards_wrap .card_item {
@@ -231,13 +364,136 @@ img {
 
     .cards_wrap .card_item {
         width: 100%;
+
+    }
+    #prereq_left{
+        display:block;
+    }
+}
+*/
+
+/*
+@media screen and (max-width: 1040px) {
+    #webinar_poster {
+        height: 100%;
+        margin-top: 7%;
+       
     }
 }
 
+@media screen and (max-width: 800px) {
+   
+   .card_item {
+        width: 50%;
+    
+    }
+}*/
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
+@media (max-width:1024){
+    #main{
+        height:60px;
+    }
+}
+@media (max-width:900px){
+    #main{
+        height:50vh;
+    }
+   
+}
+@media (max-width: 800px){
+    #prereq_left {
+        /* display: block; */
+        width: 100%;
+    }
+    #prereq_right {
+        /* display: block; */
+        width: 100%;
+    }
+    #main{
+        height:40vh;
+    }
+    #clockdiv{
+        margin-left:30%;
+
+    }
+    .image_clipart {
+     width:50%;
+     margin-left:25%;
+    }
+    .why_to_join {
+        margin: 5% 1% 5% 10%;
+    }
+   #prereq_left .heading1{
+       display:inline-block;
+   }
+}
+@media (max-width:700px) {
+    #main {
+        height:40vh;
+    }
+}
+@media (max-width:600px) {
+    #main {
+        height: 30vh;
+    }
+    #prereq_left .heading1 {
+        font-size:30px;
+    }
+    #clockdiv {
+        margin-left: 20%;
+    }
+}
+@media (max-width:500px){
+    #clockdiv {
+        margin-left: 10%;
+    }
+}
+@media (max-width:400px) {
+    #clockdiv {
+        margin-left: 5%;
+    }
+    #main{
+        height:20vh;
+    }
+}
+@media (max-width:380px) {
+    #clockdiv {
+        margin-left: 0%;
+        font-size:20px;
+    }
+    
+}
+@media (max-width:280px) {
+    #clockdiv {
+        margin-left: 0%;
+        font-size: 15px;
+    }
+    .smalltext {
+       
+        font-size: 10px;
+    }
+    #prereq_left .heading1 {
+        font-size: 20px;
+    }
+    .prerequisites {
+        margin-left:0px;
+        width:100%;
+    }
+    #prereq_right {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+}
+
+@media screen and  (min-width:768px ) and (min-height:1024px){
+    #main{
+        height:30vh;
+    }
+}
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
         padding-top: 15px;
     }
 
@@ -246,14 +502,158 @@ img {
         }
 }
 
-@media screen and (max-width:800px) {
-    #webinar_poster {
-        width: 70%;
-        height: 60%;
-       padding:20px;
+
+/*      Footer  CSS      */
+
+.footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 2%;
+    margin-top:2%;
+  
+}
+
+.top {
+    padding: 10px 0;
+}
+
+.body {
+    margin: 2% 3%; /*
+	border: solid red 1px;*/
+}
+
+.block {
+    width: 24.25%;
+    display: inline-flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.first ul, .second ul {
+    margin: 5% 3%;
+    line-height: 25px;
+}
+
+.forth ul {
+    line-height: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #555;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #fff;
     }
 
-    #main {
-        height: 30vh;
+dd {
+    color: #555;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+    dd i {
+        color: #fff;
+    }
+    .bottom{
+        margin-left:2%;
+    }
+
+.creators {
+   margin-left:30%;
+    display: flex;
+}
+
+@media screen and (max-width: 400px) and (min-width:0) {
+    .footer {
+        height: 600px;
+    }
+
+    .first {
+        margin-left: 10%;
+        width: 40%
+    }
+
+    .second {
+        float: right;
+        margin-right: 10%;
+        width: 26%;
+    }
+
+    .third {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 10%;
+        width: 30%;
+    }
+
+    .forth {
+        margin-top: -280px;
+        margin-right:;
+        float: right;
+        display: inline-block;
+        width: 50%;
+    }
+
+    .bottom {
+        position: relative;
+    }
+
+    .change {
+        display: inline-block;
     }
 }
+
+@media only screen and (min-width: 400) and (max-width: 523) {
+    .footer {
+        height: 700px;
+    }
+
+    .first {
+        float: left;
+        margin-left: 10%;
+        width: 40%
+    }
+
+    .second {
+        float: right;
+        margin-right: 10%;
+        width: 26%;
+    }
+
+    .third {
+        display: block;
+        margin-top: 40px;
+        margin-left: 10%;
+        width: 30%;
+    }
+
+    .forth {
+        margin-top: -280px;
+        margin-right:;
+        float: right;
+        width: 50%;
+    }
+
+    .bottom {
+        position: relative;
+    }
+
+    .change {
+        display: inline-block;
+    }
+}
+
