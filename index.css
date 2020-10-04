@@ -64,7 +64,7 @@ body {
     height:500px;
     margin-top: -2%;
     
-    background-image:url('images/background_header.jpg');
+    background-image:url('images/Background_header.jpg');
     background-attachment:fixed;
     background-size:contain;
    background-repeat:no-repeat;
@@ -635,6 +635,12 @@ img {
     .pay_button{
         padding:2% 30%;
     }
+     .pay_button:hover {
+        box-shadow: 0 0 2em #00BCD4;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        padding:3% 30%;
+    }
 }
 @media (max-width:400px) {
     #clockdiv {
@@ -665,7 +671,10 @@ img {
         margin-left: 8%;
         font-size:20px;
     }
-    .pay_button{
+     .pay_button:hover {
+        box-shadow: 0 0 2em #00BCD4;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
         padding:3% 30%;
     }
     .prerequisites{
