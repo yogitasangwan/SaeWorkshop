@@ -11,7 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
         function openNav() {
             document.getElementById("mySidebar").style.width = "300px";
@@ -22,10 +24,14 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
         }
-        
-   </script>
-      
- <style>
+
+    </script>
+    
+    <script>
+       
+		ScrollReveal({ reset:true,duration: 2000 })
+    </script>
+    <style>
     </style>
 </head>
 <body style="        background-color: #030f1b">
@@ -44,14 +50,10 @@
          <button class="openbtn" onclick="openNav()">☰</button>
 
      </div>
-        -->
+
+    </div>-->
     <div id="main">
-
-
-
-
         <!-- <img src="images/Background_header.jpg" id="webinar_poster" />-->
-
     </div>
 
     <div id="clockdiv">
@@ -76,20 +78,59 @@
     </div>
     <script src="timer.js">
     </script>
-    <div class="pay_button">
-       
-        <div>
-            <a href='https://www.payumoney.com/paybypayumoney/#/090B8D725A4AFD44BCEE56E54C9DA54D'>
-                <input type="button" name="register" value="Register NOW!" id="pm-button">
-            </a>
-        </div>
 
+    <script>
+        AOS.init();
+
+    </script>
+
+
+    <div class="container" style="margin-bottom:3%;">
+        <div class="row" style="align-content:center;text-align:center;">
+            <div class="col-sm-6" style="align-content:center;text-align:center;">
+                <div class="pay_button card-img-top">
+
+                    <div>
+                        <a href='https://www.payumoney.com/paybypayumoney/#/090B8D725A4AFD44BCEE56E54C9DA54D'>
+                            <input type="button" name="register" value="Register for Free!" id="pm-button">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;font-family:'BioRhyme','Times New Roman', Times, serif;">No Certificate</h5>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6" style="align-content:center;text-align:center;">
+                <div class="pay_button card-img-top">
+
+                    <div>
+                        <a href='https://www.payumoney.com/paybypayumoney/#/090B8D725A4AFD44BCEE56E54C9DA54D'>
+                            <input type="button" name="register" value="Pay Now!" id="pm-button">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white; font-family: 'BioRhyme','Times New Roman', Times, serif;">Earn a Certificate</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="prerequisites">
+
+
+
+
+    <div class="prerequisites" data-aos="flip-left"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="2000">
 
         <div class="prereq_wrap">
 
-            <div id="prereq_left" >
+            <div id="prereq_left" data-aos="fade-right"
+                 data-aos-duration="3000">
                 <img src="images/prerequisites_clipart.jpg" class="image_clipart" />
             </div>
             <div id="prereq_right">
@@ -113,15 +154,16 @@
     <div class="Horizontal_Row2"></div>
 
     <div class="prerequisites">
-        <div class="prereq_wrap">
+        <div class="prereq_wrap" data-aos="fade-left">
 
-            <div id="prereq_left">
+            <div id="prereq_left" data-aos="fade-right" data-aos-duration="2000">
 
 
-                <img src="images/learning.png" class="why_to_join " />
-                <h1 class="heading1" >Learnings</h1>
+                <img src="images/learning.png" class="why_to_join slide" />
+                <h1 class="heading1">Learnings</h1>
             </div>
-            <div id="prereq_right">
+            <div id="prereq_right" data-aos="fade-left" data-aos-duration="2000">
+
                 <ul>
                     <li>
                         Basics of Transimssion , including various types of transmission system
@@ -142,8 +184,8 @@
 
         </div>
         <center><hr size="1" width="50%" color="#fff"></center>
-       
-        <div class="prereq_wrap">
+
+        <div class="prereq_wrap" data-aos="fade-right" data-aos-duration="2000">
 
             <div id="prereq_left">
                 <img src="images/recommended.jpg" class="why_to_join" />
@@ -186,7 +228,7 @@
             &nbsp; &nbsp;&nbsp;  A major part of the workshop is designed to help students build their own car/buggy from scratch
         </p>
     </div>
-    <div class="footer">
+    <div class="footer" data-aos="flip-up" data-aos-duration="2000">
         <div class="top">
             <center><hr size="1" width="95%" color="#fff"></center>
         </div>
@@ -225,7 +267,7 @@
 
 
         </div>
-       
+
         <div class="bottom">
             <center><hr size="1" width="50%" color="#fff"></center>
             <div class="creators">
@@ -241,7 +283,11 @@
     <div class="whatsapp">
         <a href="https://api.whatsapp.com/send?phone=918295917424"><img src="images/whatsapp_logo.jfif" /></a>
     </div>
-    
+    <script>
+
+		ScrollReveal().reveal('.bottom', { delay: 500})
+
+    </script>
 </body>
 </html>
 
