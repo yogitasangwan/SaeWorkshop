@@ -278,7 +278,7 @@ ul li{
      padding-top:5%;
 
 }
- ul {
+ #prereq_right ul {
  color: white;
  font-size: medium;
 font-family: 'BioRhyme','Times New Roman', Times, serif;
@@ -440,7 +440,7 @@ img {
 
 .pay_certi {
     color: white;  font-family: 'BioRhyme','Times New Roman', Times, serif;
-        align-content:center;
+        text-align:left;
         
 }
 .pay_button1{
