@@ -427,7 +427,7 @@ img {
     //:;
     left: 0px;
     /* background-color: #031b17f0; */
-    padding: 1% 40%;
+    padding: 1% 45%;
  overflow-x:hidden;
  overflow-y:hidden;
    
@@ -435,12 +435,12 @@ img {
         box-shadow: 0 0 2em #00BCD4;
         color: #FFFFFF;
         border-color: #FFFFFF;
-        padding:3% 40%;
+        padding:3% 45%;
     }
 
 .pay_certi {
     color: white;  font-family: 'BioRhyme','Times New Roman', Times, serif;
-        text-align:left;
+       text-align:center;
         
 }
 .pay_button1{
@@ -448,6 +448,8 @@ img {
     color: #FFFFFF;
     border-color: #FFFFFF;
     margin-top:4%;
+    margin-bottom:4%;
+    text-align:center;
     
 }
 
@@ -560,6 +562,13 @@ img {
    #prereq_left .heading1{
        display:inline-block;
    }
+    .pay_button {
+        padding: 2% 35%;
+    }
+
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
 }
 @media (max-width:800px) and (max-height:1024px) {
     #main {
@@ -598,6 +607,13 @@ img {
     #footer_right{
         width:60%;
     }
+    .pay_button {
+        padding: 2% 30%;
+    }
+
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
 }
 /**@media (max-width:700px) and (max-height:500px) {
     #main {
@@ -658,7 +674,10 @@ img {
         font-size:x-large;
     }
     .pay_button{
-        padding:2% 30%;
+        padding:2% 20%;
+    }
+    .pay_button:hover {
+        padding: 2% 20%;
     }
 }
 @media (max-width:400px) {
@@ -693,6 +712,9 @@ img {
     .pay_button{
         padding:3% 30%;
     }
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
     .prerequisites{
         width:100%;
         margin-left:0%;
@@ -711,6 +733,9 @@ img {
     .pay_button {
         padding: 3% 25%;
     }
+        .pay_button:hover {
+            padding: 2% 30%;
+        }
     #footer_right{
         font-size:smaller;
     }
