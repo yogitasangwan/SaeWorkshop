@@ -53,6 +53,10 @@
 
     </div>-->
     <div id="main">
+
+
+
+
         <!-- <img src="images/Background_header.jpg" id="webinar_poster" />-->
     </div>
 
@@ -80,9 +84,25 @@
     </script>
 
     <script>
-        AOS.init();
+        AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+    });
 
     </script>
+    <div class="pay_button ">
+
+        <div>
+            <a href='https://forms.gle/seEjPcFXJ3RcKoys8'>
+                <input type="button" name="register" value="Register for Free!" id="pm-button">
+            </a>
+        </div>
+
+    </div>
+
+    <!--
 
 
     <div class="container" style="margin-bottom:3%;">
@@ -112,7 +132,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title" style="color: white; font-family: 'BioRhyme','Times New Roman', Times, serif;">Earn a Certificate</h5>
+                        <h5 class="card-title" style=" color: white; font-family: 'BioRhyme','Times New Roman', Times, serif;">Earn a Certificate</h5>
 
                     </div>
                 </div>
@@ -121,8 +141,7 @@
     </div>
 
 
-
-
+        -->
     <div class="prerequisites" data-aos="flip-left"
          data-aos-easing="ease-out-cubic"
          data-aos-duration="2000">
@@ -228,6 +247,25 @@
             &nbsp; &nbsp;&nbsp;  A major part of the workshop is designed to help students build their own car/buggy from scratch
         </p>
     </div>
+    
+    <div class="prerequisites pay_button1">
+        <div class="pay_button" data-aos="zoom-in-up">
+
+            <div>
+                <a href='https://www.payumoney.com/paybypayumoney/#/090B8D725A4AFD44BCEE56E54C9DA54D'>
+                    <input type="button" name="register" value="Pay NOW!" id="pm-button">
+                </a>
+            </div>
+
+
+        </div>
+        <p class="pay_certi" >
+            Earn a Certificate by giving a basic test and paying reasonable amount
+        </p>
+
+    </div>
+  
+
     <div class="footer" data-aos="flip-up" data-aos-duration="2000">
         <div class="top">
             <center><hr size="1" width="95%" color="#fff"></center>

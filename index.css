@@ -133,11 +133,10 @@ body {
     margin-left: 10%;
     //margin-top: 5%;
     width: 80%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     align-content: center;
     background-attachment: fixed;
     font-family: 'Vollkorn', serif;
+   
 }
 /*
 .prerequisites {
@@ -172,8 +171,8 @@ body {
     //border:5px solid red;
     width: 40%;
     margin-top: 5%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
+       
 }
 
 .why_to_join {
@@ -186,7 +185,7 @@ body {
     background-color: aquamarine;
 }
 /*
-             // animation 
+// animation 
     .slide {
     position:absolute;
     width: 20%;
@@ -229,6 +228,7 @@ body {
         left: 1%;
     }
 }
+
 */
 .heading1 {
     color: white;
@@ -297,8 +297,6 @@ ul li{
     margin-left: 10%;
     margin-top: 1%;
     align-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .image_clipart{
@@ -424,16 +422,27 @@ img {
     //:;
     left: 0px;
     /* background-color: #031b17f0; */
-    padding: 1% 35%;
-    box-shadow: 0 0 2em #00BCD4;
-    text-align:center;
+    padding: 1% 40%;
+   
 }
     .pay_button:hover {
         box-shadow: 0 0 2em #00BCD4;
         color: #FFFFFF;
         border-color: #FFFFFF;
-        padding:3% 35%;
+        padding:3% 40%;
     }
+
+.pay_certi {
+    color: white; text-align:center; font-family: 'BioRhyme','Times New Roman', Times, serif;
+        padding-bottom:3%;
+}
+.pay_button1{
+    box-shadow: 0 0 2em #00BCD4;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    
+}
+
     #pm-button {
         display: block;
         padding: 1em 1.4em;
@@ -442,7 +451,7 @@ img {
         box-sizing: border-box;
         text-decoration: underline;
         font-family: 'Roboto',sans-serif;
-       
+       // text-transform: uppercase;
         /* font-weight: bolder; */
         color: #ffffff;
         background-color: #008000;
@@ -479,7 +488,6 @@ img {
     color: #fff;
     padding: 2%;
     margin-top: 2%;
-    overflow-x: hidden; overflow-y: hidden;
 }
 
 .top {
@@ -641,10 +649,7 @@ img {
         font-size:x-large;
     }
     .pay_button{
-        text-align:center;
-    }
-    #pm-button{
-        font-size:small;
+        padding:2% 30%;
     }
 }
 @media (max-width:400px) {
@@ -669,13 +674,6 @@ img {
             border-radius: 60px;
             
         }
-    .pay_button {
-        text-align:center;
-    }
-
-    #pm-button {
-        font-size: small;
-    }
 
 }
 @media (max-width:380px) {
@@ -683,9 +681,8 @@ img {
         margin-left: 8%;
         font-size:20px;
     }
-    
-    #pm-button {
-        font-size: small;
+    .pay_button{
+        padding:3% 30%;
     }
     .prerequisites{
         width:100%;
@@ -702,7 +699,9 @@ img {
         margin-left: 5%;
         font-size: 20px;
     }
-  
+    .pay_button {
+        padding: 3% 25%;
+    }
     #footer_right{
         font-size:smaller;
     }
