@@ -423,9 +423,9 @@ img {
     left: 0px;
     /* background-color: #031b17f0; */
     padding: 1% 40%;
+ 
    
-}
-    .pay_button:hover {
+}    .pay_button:hover {
         box-shadow: 0 0 2em #00BCD4;
         color: #FFFFFF;
         border-color: #FFFFFF;
@@ -440,6 +440,7 @@ img {
     box-shadow: 0 0 2em #00BCD4;
     color: #FFFFFF;
     border-color: #FFFFFF;
+    margin-top:4%;
     
 }
 
